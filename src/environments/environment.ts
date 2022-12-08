@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  Moralis_api : 'n4ubQFSK1Q44Dd7yDBueB4PZih3mtEivQV0Ami7cdP48cYt4TTW0WhgHfIVpYyTL'
 };
 
 /*

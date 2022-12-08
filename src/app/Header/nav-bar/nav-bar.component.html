@@ -1,0 +1,30 @@
+<div class="container">
+ 
+    <div class="container__nav">
+        <mat-tab-group color="accent" animationDuration="1000ms">
+          <mat-tab label="NFTS"> 
+            <app-nfts></app-nfts>
+          </mat-tab>
+           
+          <mat-tab label="TOKENS"> 
+            <app-token></app-token>
+
+          </mat-tab>
+
+          <mat-tab label="Transactions">
+            <app-transactions></app-transactions>
+            
+          </mat-tab>
+
+      </mat-tab-group>
+    </div>
+
+    <div class="container__wallet">
+        <button>{{walletAddress?.substring(0,5)}}....{{walletAddress?.substring(38,42)}}</button>
+      <span>{{Balance}} {{ChainConnectedto}}</span>
+    </div>
+
+</div>
+
+
+

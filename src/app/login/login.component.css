@@ -1,0 +1,20 @@
+.btn {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.btn button {
+  border-radius: 50px;
+  padding: 20px;
+  background: -webkit-gradient(linear, left top, right top, from(#59f9b7), to(#66feea));
+  background: linear-gradient(to right, #59f9b7, #66feea);
+  color: black;
+  width: 200px;
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: 400;
+}
+/*# sourceMappingURL=login.component.css.map */

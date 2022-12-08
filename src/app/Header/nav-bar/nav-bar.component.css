@@ -1,0 +1,87 @@
+.container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 50px;
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container__nav {
+  width: 100%;
+  overflow: hidden;
+}
+
+.container__wallet {
+  text-align: center;
+}
+
+.container__wallet button {
+  border-radius: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#59f9b7), to(#66feea));
+  background: linear-gradient(to right, #59f9b7, #66feea);
+  color: black;
+  font-size: large;
+  font-weight: 400;
+}
+
+.container__wallet span {
+  padding-top: 10px;
+  font-size: medium;
+  font-weight: 300;
+}
+
+.container__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+
+.container__cardItems {
+  width: 300px;
+  height: 400px;
+  padding: 12px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.mat-tab-label .mat-tab-label-content {
+  color: white;
+  width: 100% !important;
+}
+
+.mat-tab-body.mat-tab-body-active {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden !important;
+  z-index: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.mat-tab-body-content {
+  padding-top: 40px;
+  height: 100% !important;
+  overflow: hidden  !important;
+}
+
+.mat-table {
+  width: 100% !important;
+  background-color: #333;
+}
+
+th.mat-header-cell {
+  color: red;
+  text-transform: uppercase;
+}
+
+td.mat-cell, td.mat-footer-cell {
+  color: white;
+}
+/*# sourceMappingURL=nav-bar.component.css.map */

@@ -1,0 +1,18 @@
+<div class="container">
+    <div 
+    class="collectionCard" 
+    *ngFor="let data of nftData$">
+        <img src="{{ getImgUrl(data.metadata)}}" alt="nf img" >
+        <div class="details">
+            <div class="name">
+                {{getNftname(data.metadata)}}
+                <div class="id">#. {{data.token_id}}</div>
+            </div>
+        </div>
+    
+        <div class="priceContainer">
+            <img src="assets/assets/weth.png" alt="symbol" class="weithImage">
+            <div class="price">  {{getNftTokenId(data.metadata)}}</div>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,81 @@
+.container{
+    box-sizing: border-box;
+    margin: 0 50px;
+    padding-top:25px ;
+    display: flex;
+    justify-content: space-between;
+
+&__nav{
+width: 100%;
+overflow: hidden;
+}
+   
+&__wallet {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    button{
+        border-radius: 50px;
+        background: linear-gradient(to right, #59f9b7, #66feea);
+        color: black;        
+        font-size: large;
+        font-weight: 400;
+}
+    span{
+        padding-top: 10px;
+        font-size: medium;
+        font-weight: 300;
+
+    }
+    
+}
+
+
+
+&__card{
+    display: flex;
+    margin-top: 50px;
+}
+
+&__cardItems{
+    width: 300px;
+    height: 400px;
+    padding: 12px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+}
+
+.mat-tab-label .mat-tab-label-content{
+    // color: #CA215B;
+    color: white;
+    width: 100% !important;
+    
+}
+.mat-tab-body.mat-tab-body-active {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden !important;
+    z-index: 1;
+    flex-grow: 1;
+}
+.mat-tab-body-content{
+    padding-top: 40px;
+    height: 100% !important; 
+    overflow: hidden  !important;
+}
+
+.mat-table {
+    width: 100% !important;
+    background-color: #333;
+  }
+
+th.mat-header-cell{
+    color: red;
+    text-transform: uppercase;
+  }
+ td.mat-cell, td.mat-footer-cell {
+    color: white;
+}
+  
