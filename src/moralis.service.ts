@@ -44,22 +44,22 @@ export class MoralisService {
  
 
   getnftData(){
-    return this.http.get<ResponseType>(`https://deep-index.moralis.io/api/v2/${this?.walletAddress}/nft?chain=mumbai`,{headers:new HttpHeaders({accept: 'application/json','X-API-Key':this.api,format: 'decimal', normalizeMetadata: 'false'})})
+    return this.http.get<ResponseType>(`https://deep-index.moralis.io/api/v2/${this?.walletAddress}/nft?chain=eth`,{headers:new HttpHeaders({accept: 'application/json','X-API-Key':this.api,format: 'decimal', normalizeMetadata: 'false'})})
   }
   
   getTokenTransactions(){
-    return this.http.get<ResponseType>(`https://deep-index.moralis.io/api/v2/${this?.walletAddress}/erc20/transfers?chain=mumbai`,{headers:new HttpHeaders({accept: 'application/json','X-API-Key':this.api,format: 'decimal'})})
+    return this.http.get<ResponseType>(`https://deep-index.moralis.io/api/v2/${this?.walletAddress}/erc20/transfers?chain=eth`,{headers:new HttpHeaders({accept: 'application/json','X-API-Key':this.api,format: 'decimal'})})
   }
   getNftTransactions(){
-    return this.http.get<ResponseType>(`https://deep-index.moralis.io/api/v2/${this?.walletAddress}/erc20/transfers?chain=mumbai`,{headers:new HttpHeaders({accept: 'application/json','X-API-Key':this.api,format: 'decimal'})})
+    return this.http.get<ResponseType>(`https://deep-index.moralis.io/api/v2/${this?.walletAddress}/erc20/transfers?chain=eth`,{headers:new HttpHeaders({accept: 'application/json','X-API-Key':this.api,format: 'decimal'})})
   }
 
   getTokens(){
-    return this.http.get<ResponseType>(`https://deep-index.moralis.io/api/v2/${this?.walletAddress}/erc20?chain=mumbai`,{headers:new HttpHeaders({accept: 'application/json','X-API-Key':this.api,format: 'decimal'})})
+    return this.http.get<ResponseType>(`https://deep-index.moralis.io/api/v2/${this?.walletAddress}/erc20?chain=eth`,{headers:new HttpHeaders({accept: 'application/json','X-API-Key':this.api,format: 'decimal'})})
   }
 
   getBalance(){
-    return this.http.get<ResponseType>(`https://deep-index.moralis.io/api/v2/${this?.walletAddress}/balance?chain=mumbai`,{headers:new HttpHeaders({accept: 'application/json','X-API-Key':this.api})})
+    return this.http.get<ResponseType>(`https://deep-index.moralis.io/api/v2/${this?.walletAddress}/balance?chain=eth`,{headers:new HttpHeaders({accept: 'application/json','X-API-Key':this.api})})
   }
  
 
