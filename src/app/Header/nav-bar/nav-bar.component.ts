@@ -1,5 +1,5 @@
 import { Component, OnInit,ViewEncapsulation } from '@angular/core';
-import { MoralisService } from 'src/moralis.service';
+import { MoralisService } from '../../../moralis.service';
 
 
 @Component({

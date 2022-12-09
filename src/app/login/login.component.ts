@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { MoralisService } from 'src/moralis.service';
+import { MoralisService } from '../../moralis.service';
 
 @Component({
   selector: 'app-login',

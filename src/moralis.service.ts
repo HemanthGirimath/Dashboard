@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environment';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { of } from 'rxjs';
+import { environment } from './environments/environment';
 
 export interface ResponseType {
   total: number, 
