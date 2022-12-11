@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { MoralisService } from '../../../moralis.service';
+import { MoralisService } from 'src/moralis.service';
 
 @Component({
   selector: 'app-transactions',
@@ -26,6 +26,7 @@ export class TransactionsComponent implements OnInit {
 
   ngOnInit(): void {
     this.server.getTokenTransactions().subscribe(res=> this.dataSource = new MatTableDataSource(res.result)) 
+    // this.server.getTokenTransactions().subscribe(res=>console.log(res.result)) 
   }
 
 }

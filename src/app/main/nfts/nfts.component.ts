@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MoralisService } from '../../../moralis.service';
-
-
-
-
+import { MoralisService } from 'src/moralis.service';
 
 @Component({
   selector: 'app-nfts',
@@ -15,14 +11,15 @@ import { MoralisService } from '../../../moralis.service';
 export class NftsComponent implements OnInit {
   nftData$:any = []
   v = 0
- 
-
 
   constructor(private serve:MoralisService,) { }
 
   
   getImgUrl(metadata: any){
+
+    if (!metadata) return null;
     let meta = JSON.parse(metadata)
+    
     if (!meta.image.includes("ipfs://")) {
       return meta.image;
     } else {
@@ -47,9 +44,9 @@ export class NftsComponent implements OnInit {
   }
 
    ngOnInit() {
-  this.serve.getWalletAddress();
-  this.serve.getnftData().subscribe(res=>this.nftData$ = res.result );
-   
+     this.serve.getnftData().subscribe(res=>this.nftData$ = res.result);
+    this.serve.getWalletAddress();
+  
   }
 
 }

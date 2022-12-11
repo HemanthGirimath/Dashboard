@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { MoralisService } from '../../../moralis.service';
+import { MoralisService } from 'src/moralis.service';
 
 @Component({
   selector: 'app-token',

@@ -7,7 +7,6 @@
 
 </div> -->
 
-<div>
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8"  >
     <ng-container matColumnDef="transaction_hash">
     <th mat-header-cell *matHeaderCellDef> Hash </th>
@@ -39,4 +38,4 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
-</div>
+
