@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { MoralisService } from 'src/moralis.service';
-
+import { MoralisService } from '../../../moralis.service';
 @Component({
   selector: 'app-transactions',
   templateUrl: './transactions.component.html',

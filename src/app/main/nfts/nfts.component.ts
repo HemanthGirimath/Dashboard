@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MoralisService } from 'src/moralis.service';
+import { MoralisService } from '../../../moralis.service';
 
 @Component({
   selector: 'app-nfts',
@@ -44,8 +44,8 @@ export class NftsComponent implements OnInit {
   }
 
    ngOnInit() {
+     this.serve.getWalletAddress();
      this.serve.getnftData().subscribe(res=>this.nftData$ = res.result);
-    this.serve.getWalletAddress();
   
   }
 

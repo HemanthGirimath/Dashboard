@@ -28,7 +28,7 @@ export class MoralisService {
   constructor(private http:HttpClient) { }
 
   api = environment.Moralis_api
-  chain:string
+  chain:any
   walletAddress:any;
 
   async loginMetaMask(){
